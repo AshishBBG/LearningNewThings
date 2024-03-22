@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page3.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="nav-bar">
+            <span class="logo">Tailor</span>
+            <div class="dropdown-container">
+                <div class="dropdown-search">
+                    <button class="dropdown-btn" onmouseover="showHideDropdown()">Dropdown <i
+                            class="arrow down"></i></button>
+                    <input type="search" placeholder="🔍 Search for Top tailors, top trends or top sellers"
+                        class="nav-search" />
+                </div>
+
+                <div class="dropdown-items" id="dropdown">
+                    <div class="dropdown-list-items">
+                        <a href="#">Hyderabad</a>
+                        <a href="#">Delhi</a>
+                        <a href="#">Jammu</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <input type="search" placeholder="Search for Top tailors, top trends or top sellers"
+                class="nav-search-bar" /> -->
+            <div>
+                <button class="nav-button">Log in</button>
+                <button class="nav-button">Sign up</button>
+            </div>
+        </nav>
+        <!-- nav bar end here -->
+        <!-- nav2 starts here -->
+        <div class="nav-2">
+            <ul class="nav2-items">
+                <li><a href="#" class="nav2-item">Home</a><span class="nav2-seperator">/</span></li>
+                <li><a href="#" class="nav2-item">India</a><span class="nav2-seperator">/</span></li>
+                <li><a href="#" class="nav2-curr-location">Hyderabad</a></li>
+            </ul>
+        </div>
+        <!-- nav 2 ends here -->
+        <!-- services start here Tailor, cloting -->
+        <div class="our-services">
+            <a href="#" class="our-services-link">
+                <div class="our-services-tailor spacing">
+                    <div class="circle">
+                        <img class="tailor-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zLeVkeCvuTG6Bu3YA0_Qt8EeWppS_hq-Nw&usqp=CAU"
+                            alt="a tailor image">
+                    </div>
+                    <span class="our-services-text">Tailor</span>
+                </div>
+            </a>
+            <a href="#" class="our-services-link">
+                <div class="our-services-tailor">
+                    <div class="circle">
+                        <img class="tailor-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yi-5JTKLhmPVLZHgpN-osQoE3jIIpVsd2A&usqp=CAU"
+                            alt="a tailor image">
+                    </div>
+                    <span class="our-services-text">Tailor with cloths</span>
+                </div>
+            </a>
+        </div>
+        <!-- services end here Tailor, cloting -->
+    </div>
+
+    <div class="border"></div>
+
+    <div class="container">
+        <div class="product-container">
+            <div class="product-container-left">
+                <div class="product-container-left-items">
+                    <div class="product-container-left-images">
+                        <img class="small-img" src="https://m.media-amazon.com/images/I/51+1L27ThrL._AC_UL320_.jpg"
+                            alt="">
+                        <img class="small-img" src="https://m.media-amazon.com/images/I/51+1L27ThrL._AC_UL320_.jpg"
+                            alt="">
+                        <img class="small-img" src="https://m.media-amazon.com/images/I/51+1L27ThrL._AC_UL320_.jpg"
+                            alt="">
+                        <img class="small-img" src="https://images.meesho.com/images/products/392629777/h3ord_512.webp"
+                            alt="">
+                        <img class="small-img" src="https://images.meesho.com/images/products/392629777/h3ord_512.webp"
+                            alt="">
+                        <!-- <img class="small-img" src="https://images.meesho.com/images/products/392629777/h3ord_512.webp"
+                            alt=""> -->
+                    </div>
+                    <div class="product-container-left-main-img">
+                        <img class="product-main-img" id="img-container"
+                            src="https://m.media-amazon.com/images/I/51+1L27ThrL._AC_UL320_.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="cart-and-buy">
+                    <a href="cart.html">
+                        <button class="cart common-btn">Add to Cart</button>
+                    </a>
+                    <button class="buy common-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product-container-right">
+                <div class="price-info">
+                    <h3 class="product-info-title">Mens Active Tshirts Sportswear t-shirts</h3>
+                    <div class="price-with-info-btn">
+                        <h2 class="product-info-price">₹98/Mtr</h2>
+                        <img id="info" class="info-img" src="https://cdn-icons-png.flaticon.com/128/545/545674.png" />
+                        <div id="infomessage" class="info-message">
+                            <p class="price-details">PRICE DETAILS</p>
+                            <p class="border-price"></p>
+                            <p class="mrp">Maximum Retail Price (MRP) ₹105/Mtr</p>
+                            <p class="final-price">Final Discounted Price ₹98/Mtr</p>
+                        </div>
+                    </div>
+                    <button class="delivery-btn">Free Delivery</button>
+                </div>
+                <div id="img-show"></div>
+
+
+                <div class="product-details">
+                    <h3 class="product-detail-title">Product Details</h3>
+                    <p>Name : Mens Active Tshirts Sportswear t-shirts</p>
+                    <p>Fabric : Polyester</p>
+                    <p>Type : Cotton</p>
+                    <p>Color : Red</p>
+                    <p>Care Instructions : Machine Wash</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        let dropDownContent = document.querySelector("#dropdown")
+        function showHideDropdown() {
+            dropDownContent.classList.toggle("show")
+        }
+        dropDownContent.onmouseleave = function (e) {
+            // alert("hi")
+            if (dropDownContent.classList.contains("show")) {
+                dropDownContent.classList.remove("show")
+            }
+        }
+
+        let smallImg = document.querySelectorAll(".small-img");
+        let container = document.querySelector("#img-container");
+
+        smallImg.forEach(function (img) {
+            img.addEventListener("mouseover", function () {
+                // alert("hi")
+                // console.log(img.src)
+                container.src = img.src
+            })
+        })
+
+        let info = document.querySelector("#info");
+        let infoMessage = document.querySelector("#infomessage");
+
+        info.addEventListener("mouseover", function () {
+            // alert("hi")
+            let infoRect = info.getBoundingClientRect();
+            // infoMessage.style.left = `${infoRect.left}px`;
+            // infoMessage.style.bottom = `${infoRect.bottom}px`;
+            // infoMessage.style.bottom = 2;
+            // infoMessage.style.b = `${infoRect.bottom}px`;
+            infoMessage.style.display = 'block';
+        })
+
+        info.addEventListener("mouseleave", function () {
+            // alert("hi")
+            infoMessage.style.display = 'none';
+        })
+
+
+
+    </script>
+    <!-- 
+    <script>
+        let body =document.querySelector("#img-show");
+        var options = {
+            width: 400, // required
+            height: 400,
+            zoomWidth: 50,
+            img: 'https://m.media-amazon.com/images/I/51+1L27ThrL._AC_UL320_.jpg',
+            scale: 2.5,
+            zoomContainer: body,
+            // offset: {
+            //     vertical: 0,
+            //     horizontal: 1
+            // }
+        };
+        new ImageZoom(document.getElementById("img-container"), options);
+    </script> -->
+
+
+    <!-- $(document).ready(function(){
+        $(".small-img").hover(function(){
+            $(".product-main-img").attr('src', $(this).attr('src'))
+        })
+    })
+</script> -->
+
+</body>
+
+</html>

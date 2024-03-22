@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Document</title>
+</head>
+
+<body id="top">
+    <div class="container">
+
+        <nav class="nav-bar">
+            <span class="logo">Tailor</span>
+            <div class="dropdown-container">
+                <div class="dropdown-search">
+                    <button class="dropdown-btn" onmouseover="showHideDropdown()">Dropdown <i
+                            class="arrow down"></i></button>
+                    <input type="search" placeholder="🔍 Search for Top tailors, top trends or top sellers"
+                        class="nav-search" />
+                </div>
+
+                <div class="dropdown-items" id="dropdown">
+                    <div class="dropdown-list-items">
+                        <a href="#">Hyderabad</a>
+                        <a href="#">Delhi</a>
+                        <a href="#">Jammu</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <input type="search" placeholder="Search for Top tailors, top trends or top sellers"
+                class="nav-search-bar" /> -->
+            <div>
+                <button class="nav-button">Log in</button>
+                <button class="nav-button">Sign up</button>
+            </div>
+        </nav>
+        <!-- nav bar end here -->
+        <!-- nav2 starts here -->
+        <div class="nav-2">
+            <ul class="nav2-items">
+                <li><a href="#" class="nav2-item">Home</a><span class="nav2-seperator">/</span></li>
+                <li><a href="#" class="nav2-item">India</a><span class="nav2-seperator">/</span></li>
+                <li><a href="#" class="nav2-curr-location">Hyderabad</a></li>
+            </ul>
+        </div>
+        <!-- nav 2 ends here -->
+        <!-- services start here Tailor, cloting -->
+        <div class="our-services">
+            <a href="#" class="our-services-link">
+                <div class="our-services-tailor spacing">
+                    <div class="circle">
+                        <img class="tailor-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zLeVkeCvuTG6Bu3YA0_Qt8EeWppS_hq-Nw&usqp=CAU"
+                            alt="a tailor image">
+                    </div>
+                    <span class="our-services-text">Tailor</span>
+                </div>
+            </a>
+            <a href="#" class="our-services-link">
+                <div class="our-services-tailor">
+                    <div class="circle">
+                        <img class="tailor-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yi-5JTKLhmPVLZHgpN-osQoE3jIIpVsd2A&usqp=CAU"
+                            alt="a tailor image">
+                    </div>
+                    <span class="our-services-text">Tailor with cloths</span>
+                </div>
+            </a>
+        </div>
+        <!-- services end here Tailor, cloting -->
+    </div>
+
+    <div class="border"></div>
+
+    <!-- cart start here -->
+
+    <div class="container">
+        <div class="cart-items">
+            <span class="cart">Cart</span>
+            <span class="cart-border"></span>
+            <span class="cart-no-item">4 Item</span>
+        </div>
+
+        <!-- cart ends here -->
+
+        <div class="cart-section">
+            <div class="cart-left-section">
+
+                <!-- cart item 1 start here -->
+                <div class="cart-left-container">
+                    <div class="cart-container-items">
+                        <div class="cart-container-img">
+                            <img class="cart-img"
+                                src="https://images.meesho.com/images/products/325861842/4c2ae_512.webp" alt="">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-heading">CHIKAN KURTA FOR BABY BOYS</h3>
+                            <h5 class="cart-price">Price: ₹98/Mtr</h5>
+                            <p class="cart-policy">All issue easy returns allowed</p>
+                            <div class="qty">
+                                <p class="qty-text">Qty:</p>
+                                <button class="qty-add" id="qtyAdd">+</button>
+                                <button class="qty-no" id="qtyNo">1</button>
+                                <button class="qty-sub" id="qtySub">-</button>
+                            </div>
+                            <button class="removeBtn">Remove X</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart item 1 ends here -->
+
+                   <!-- cart item 2 start here -->
+                   <div class="cart-left-container">
+                    <div class="cart-container-items">
+                        <div class="cart-container-img">
+                            <img class="cart-img"
+                                src="https://images.meesho.com/images/products/20518895/646f6_512.webp" alt="">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-heading">CHIKAN KURTA FOR BABY BOYS</h3>
+                            <h5 class="cart-price">Price: ₹98/Mtr</h5>
+                            <p class="cart-policy">All issue easy returns allowed</p>
+                            <div class="qty">
+                                <p class="qty-text">Qty:</p>
+                                <button class="qty-add" id="qtyAdd">+</button>
+                                <button class="qty-no" id="qtyNo">1</button>
+                                <button class="qty-sub" id="qtySub">-</button>
+                            </div>
+                            <button class="removeBtn">Remove X</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart item 2 ends here -->
+
+                 <!-- cart item 3 start here -->
+                 <div class="cart-left-container">
+                    <div class="cart-container-items">
+                        <div class="cart-container-img">
+                            <img class="cart-img"
+                                src="https://images.meesho.com/images/products/280402414/1qvxg_400.webp" alt="">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-heading">CHIKAN KURTA FOR BABY BOYS</h3>
+                            <h5 class="cart-price">Price: ₹98/Mtr</h5>
+                            <p class="cart-policy">All issue easy returns allowed</p>
+                            <div class="qty">
+                                <p class="qty-text">Qty:</p>
+                                <button class="qty-add" id="qtyAdd">+</button>
+                                <button class="qty-no" id="qtyNo">1</button>
+                                <button class="qty-sub" id="qtySub">-</button>
+                            </div>
+                            <button class="removeBtn">Remove X</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart item 3 ends here -->
+
+                 <!-- cart item 4 start here -->
+                 <div class="cart-left-container">
+                    <div class="cart-container-items">
+                        <div class="cart-container-img">
+                            <img class="cart-img"
+                                src="https://images.meesho.com/images/products/379066621/ey2zu_400.webp" alt="">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-heading">CHIKAN KURTA FOR BABY BOYS</h3>
+                            <h5 class="cart-price">Price: ₹98/Mtr</h5>
+                            <p class="cart-policy">All issue easy returns allowed</p>
+                            <div class="qty">
+                                <p class="qty-text">Qty:</p>
+                                <button class="qty-add" id="qtyAdd">+</button>
+                                <button class="qty-no" id="qtyNo">1</button>
+                                <button class="qty-sub" id="qtySub">-</button>
+                            </div>
+                            <button class="removeBtn">Remove X</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart item 4 ends here -->
+
+                 <!-- cart item 5 start here -->
+                 <div class="cart-left-container">
+                    <div class="cart-container-items">
+                        <div class="cart-container-img">
+                            <img class="cart-img"
+                                src="https://images.meesho.com/images/products/35573036/dd5mr_400.webp" alt="">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-heading">CHIKAN KURTA FOR BABY BOYS</h3>
+                            <h5 class="cart-price">Price: ₹98/Mtr</h5>
+                            <p class="cart-policy">All issue easy returns allowed</p>
+                            <div class="qty">
+                                <p class="qty-text">Qty:</p>
+                                <button class="qty-add" id="qtyAdd">+</button>
+                                <button class="qty-no" id="qtyNo">1</button>
+                                <button class="qty-sub" id="qtySub">-</button>
+                            </div>
+                            <button class="removeBtn">Remove X</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart item 5 ends here -->
+
+
+                <!-- left container ends here -->
+            </div>
+
+            <div class="cart-right-section">
+                <div class="cart-right-container">
+                    <div class="cart-pricing-section">
+                        <h3 class="cart-right-price">Price Details</h3>
+                        <div class="cart-right-info">
+                            <p class="total-price-text">Total Product Price</p>
+                            <p>₹98</p>
+                        </div>
+                        <div class="price-section-border"></div>
+                        <div class="cart-right-info">
+                            <h3 class="order-total">Order Total</h3>
+                            <h3>₹565</h3>
+                        </div>
+                        <p class="continue-alert">Clicking on ‘Continue’ will not deduct any money</p>
+                        <a href="deliveryDetails.html"><button class="continue-btn">Continue</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const addEle = document.querySelector("#qtyAdd")
+        const subEle = document.querySelector("#qtySub")
+        const countNoShow = document.querySelector("#qtyNo")
+        let count = 1;
+
+        addEle.addEventListener("click", add)
+        subEle.addEventListener("click", sub);
+        function add() {
+            count += 1;
+            updateShow();
+        }
+
+        function sub() {
+            if (count > 1) {
+                count -= 1;
+                updateShow();
+            }
+        }
+
+        function updateShow() {
+            countNoShow.textContent = count
+        }
+
+    </script>
+
+</body>
+
+</html>

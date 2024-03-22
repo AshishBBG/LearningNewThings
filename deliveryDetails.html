@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deliveryDetails.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="nav-bar">
+            <span class="logo">Tailor</span>
+            <div class="dropdown-container">
+                <div class="dropdown-search">
+                    <button class="dropdown-btn" onmouseover="showHideDropdown()">Dropdown <i
+                            class="arrow down"></i></button>
+                    <input type="search" placeholder="🔍 Search for Top tailors, top trends or top sellers"
+                        class="nav-search" />
+                </div>
+
+                <div class="dropdown-items" id="dropdown">
+                    <div class="dropdown-list-items">
+                        <a href="#">Hyderabad</a>
+                        <a href="#">Delhi</a>
+                        <a href="#">Jammu</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <input type="search" placeholder="Search for Top tailors, top trends or top sellers"
+                class="nav-search-bar" /> -->
+            <div>
+                <button class="nav-button">Log in</button>
+                <button class="nav-button">Sign up</button>
+            </div>
+        </nav>
+        <!-- nav bar end here -->
+        <!-- nav2 starts here -->
+        <div class="nav-2">
+            <ul class="nav2-items">
+                <li><a href="#" class="nav2-item">Home</a><span class="nav2-seperator">/</span></li>
+                <li><a href="#" class="nav2-item">India</a><span class="nav2-seperator">/</span></li>
+                <li><a href="#" class="nav2-curr-location">Hyderabad</a></li>
+            </ul>
+        </div>
+        <!-- nav 2 ends here -->
+        <!-- services start here Tailor, cloting -->
+        <div class="our-services">
+            <a href="#" class="our-services-link">
+                <div class="our-services-tailor spacing">
+                    <div class="circle">
+                        <img class="tailor-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zLeVkeCvuTG6Bu3YA0_Qt8EeWppS_hq-Nw&usqp=CAU"
+                            alt="a tailor image">
+                    </div>
+                    <span class="our-services-text">Tailor</span>
+                </div>
+            </a>
+            <a href="#" class="our-services-link">
+                <div class="our-services-tailor">
+                    <div class="circle">
+                        <img class="tailor-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yi-5JTKLhmPVLZHgpN-osQoE3jIIpVsd2A&usqp=CAU"
+                            alt="a tailor image">
+                    </div>
+                    <span class="our-services-text">Tailor with cloths</span>
+                </div>
+            </a>
+        </div>
+        <!-- services end here Tailor, cloting -->
+    </div>
+
+    <div class="border"></div>
+
+    <div class="form-section">
+        <div class="form-container">
+            <h2 class="form-heading">Contact Details</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input required type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Contact No:</label>
+                <input required type="tel" id="phone" name="phone" placeholder="Enter your contact number">
+            </div>
+
+            <h2 class="form-heading">Address Details</h2>
+            <div class="form-group">
+                <label for="house">House No:</label>
+                <input type="text" id="house" name="house" placeholder="Enter your house number">
+            </div>
+            <div class="form-group">
+                <label for="road">Road Name:</label>
+                <input type="text" id="road" name="road" placeholder="Enter your road name">
+            </div>
+            <div class="form-group">
+                <label for="area">Area/Colony:</label>
+                <input type="text" id="area" name="area" placeholder="Enter your area/colony">
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city">
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <select id="state" name="state">
+                    <option value="">Select your state</option>
+                    <!-- Add more options for different states -->
+                    <option value="state1">Hyderabad</option>
+                    <option value="state2">Delhi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="landmark">Landmark (optional):</label>
+                <input type="text" id="landmark" name="landmark" placeholder="Enter a landmark">
+            </div>
+
+            <h2 class="form-heading">Available Slots</h2>
+            <div class="form-group slots">
+                <label for="slot1">10AM - 1PM:</label>
+                <input type="radio" id="slot1" value="slot1" name="slot">
+            </div>
+            <div class="form-group slots">
+                <label for="slot2">1PM - 4PM:</label>
+                <input type="radio" id="slot2" value="slot2" name="slot">
+            </div>
+            <div class="form-group slots">
+                <label for="slot3">4PM - 7PM:</label>
+                <input type="radio" id="slot3" value="slot3" name="slot">
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        let dropDownContent = document.querySelector("#dropdown")
+        function showHideDropdown() {
+            dropDownContent.classList.toggle("show")
+        }
+        dropDownContent.onmouseleave = function (e) {
+            // alert("hi")
+            if (dropDownContent.classList.contains("show")) {
+                dropDownContent.classList.remove("show")
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
